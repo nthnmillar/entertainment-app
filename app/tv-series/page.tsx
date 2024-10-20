@@ -1,3 +1,5 @@
+import TvSeries from "@/components/tv-series/TvSeries";
+
 interface Metadata {
   title: string;
   description: string;
@@ -8,13 +10,6 @@ export const metadata: Metadata = {
   description: "Sign up to access your favourite movies",
 };
 
-export default function TvSeries(): React.ReactElement {
-  return (
-    <>
-      <p> Search for TV series</p>
-      <br />
-      <p> TV Series</p>
-      {/* Display all TV series */}
-    </>
-  );
+export default function TvSeriesPage(): React.ReactElement {
+  return <TvSeries />;
 }
